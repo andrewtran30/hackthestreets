@@ -2,10 +2,10 @@ import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-faq',
-  templateUrl: './freqa.page.html',
-  styleUrls: ['./freqa.page.scss'],
+  templateUrl: './faq.page.html',
+  styleUrls: ['./faq.page.scss'],
 })
-export class FreqaPage implements OnInit {
+export class FaqPage implements OnInit {
 
   constructor() { }
 
