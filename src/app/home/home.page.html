@@ -1,6 +1,6 @@
 <ion-header>
     <ion-toolbar>
-      <ion-title>Madhacks</ion-title>
+      <ion-title>Madhacks 2020</ion-title>
       <ion-buttons slot="primary">
           <ion-button [routerLink]="['']">
             <ion-icon name="home" size="large"></ion-icon>
@@ -22,19 +22,20 @@
     </ion-toolbar>
   </ion-header>
   
-  <ion-content>
-    <ion-card class="welcome-card">
-      <img src="/assets/shapes.svg" alt="" />
+  <ion-content class="welcome-card">
+    <ion-card class="welcome-card-img">
+      <img src="/assets/shapes.svg" alt="Error Processing Image" />
     </ion-card>
-    <ion-card>
+
+    <ion-card class="welcome-card">
       <ion-card-header>
-        <ion-card-title>Learn. Hack. Win.</ion-card-title>
+        <ion-card-title class="title-style">Learn. Hack. Win.</ion-card-title>
       </ion-card-header>
       <ion-card-content>
         <ion-grid>
           <ion-row>
             <ion-col size="6">
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+              <p class="text-size">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
             </ion-col>
             <ion-col size="6">
               <img src="/assets/shapes.svg" />
@@ -47,19 +48,19 @@
 
     <ion-card>
       <ion-card-header>
-        <ion-card-title>Sponsors</ion-card-title>
+        <ion-card-title class="title-style">Sponsors</ion-card-title>
       </ion-card-header>
       <ion-card-content>
         <ion-grid>
           <ion-row>
-            <ion-col size="4">
-              <img src="/assets/shapes.svg">
-              <ion-title class="ion-text-center">Mathtivity</ion-title>
+            <ion-col size="2">
+              <img src="/assets/sponsors/mathtivity-sponsor.png">
+              <ion-title class="sponsor-text-size">Mathtivity</ion-title>
             </ion-col>
-            <ion-col size="4">
+            <ion-col size="2">
               <img src="/assets/shapes.svg">
             </ion-col>
-            <ion-col size="4">
+            <ion-col size="2">
               <img src="/assets/shapes.svg">
             </ion-col>
           </ion-row>
@@ -81,7 +82,7 @@
 
     <ion-card>
       <ion-card-header>
-        <ion-card-title>Meet The Team</ion-card-title>
+        <ion-card-title class="title-style">Meet The Team</ion-card-title>
       </ion-card-header>
       <ion-card-content>
         <ion-list>

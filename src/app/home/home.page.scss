@@ -1,4 +1,30 @@
-.welcome-card img {
-    max-height: 35vh;
+.toolbar-class {
+    min-height: 75px;
+}
+
+
+.welcome-card-img{
+    max-height: 50vh;
     overflow: hidden;
+}
+
+.welcome-card {
+    background-color: green;
+}
+
+.sponsor-text-size {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.text-size {
+    font-size: 16px;
+    color: white;
+    font-weight: 500;
+}
+
+.title-style {
+    font-size: 30px;
+    margin-bottom: 2%
 }
