@@ -12,9 +12,9 @@
     overflow: hidden;
 }
 
-
 .about-image {
     margin-right: 5%;
+    height: min-content;
 }
 
 .team-image {
@@ -50,6 +50,19 @@
 
 .title-sm-style {
     text-align: center;
-    font-size: 25px;
-    margin-bottom: 1%
+    font-size: 20px;
+    color: whitesmoke;
+    margin-bottom: 1%;
+    margin-top: 1%;
+    width: 100% !important;
+    margin: 0 !important;
 }
+
+.sm-card {
+    display: flex;
+    flex-direction: column;
+    width: 100% !important;
+    margin: 0 !important;
+    background: "primary";
+}
+
