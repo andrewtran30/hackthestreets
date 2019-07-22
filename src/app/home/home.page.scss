@@ -2,6 +2,7 @@
     min-height: 75px;
 }
 
+
 .madHacks-img {
     display: block;
     margin-left: auto;
@@ -26,13 +27,18 @@
     margin-right: 5%;
 }
 
+.iongrid {
+    color: whitesmoke;
+    border: 5px solid slateblue;
+}
+
 .welcome-card-img{
     position: relative;
     display: flex;
     flex-direction: column;
     width: 100% !important;
     margin: 0 !important;
-    max-height: 100vmax;
+    max-height: 100vh;
     overflow: hidden;
 }
 
@@ -41,8 +47,14 @@
     height: min-content;
 }
 
+.schedule-card {
+    margin-left: 10%;
+    margin-right: 10%;
+    box-shadow: none !important;
+}
+
 .team-image {
-    max-height: 285px;
+    max-height: 280px;
     overflow: hidden;
 }
 
@@ -59,8 +71,9 @@
     margin-left: auto;
     margin-right: auto;
     text-align: center;
-    font-size: 50px;
-    font-weight: bold;
+    font-size: 90px;
+    font-family: "Verdana" !important;
+    font-weight: 700;
     text-align: center;
 }
 
@@ -70,6 +83,7 @@
     margin-left: auto;
     margin-right: auto;
     font-size: 25px;
+    font-family: "Lora" !important;
     font-weight: bold;
     text-align: center;
 }
@@ -89,9 +103,9 @@
 }
 
 .wsite-content-title {
-    font-family:"Montserrat" !important;
+    font-family:"Verdana" !important;
     font-weight:700 !important;
-    font-size: 85px;
+    font-size: 60px;
     text-align: center;
 }
 
