@@ -1,6 +1,6 @@
 <ion-header>
     <ion-toolbar color="primary">
-      <ion-title>Madhacks 2020</ion-title>
+      <ion-title color="light"><strong>MADHACKS 2020</strong></ion-title>
       <ion-buttons slot="primary">
           <ion-button [routerLink]="['']">
             <ion-icon name="home" size="large"></ion-icon>
@@ -22,33 +22,46 @@
     </ion-toolbar>
   </ion-header>
   
-  <ion-content class="welcome-card">
+  <ion-content class="welcome-card" color="light">
     <ion-card class="welcome-card-img">
       <img src="/assets/shapes.svg" alt="Error Processing Image" />
+      <ion-grid class="myOverlay">
+            <ion-row>
+              <ion-card-title class="title-text-size">MADHACKS 2020</ion-card-title>
+            </ion-row>
+            <ion-row>
+              <ion-card-subtitle class="subtitle-text-size">March 14-15 | James Madison High School</ion-card-subtitle>
+            </ion-row>
+            <ion-row>
+              <ion-button style="margin-left: auto; margin-right: auto; margin-top: auto; margin-bottom: auto;">REGISTER NOW</ion-button>
+            </ion-row>
+      </ion-grid>
     </ion-card>
 
     <ion-card class="welcome-card">
-      <ion-card-header>
-        <ion-card-title class="title-style">Learn. Hack. Win.</ion-card-title>
-      </ion-card-header>
-      <ion-card-content>
-        <ion-grid>
-          <ion-row>
-            <ion-col size="6">
-              <p class="text-size">Have you ever wanted to build autonomous drones, amazing iOS/Android apps, cool games, or experiment with artificial intelligence? Whether you're an experienced developer, or just starting to learn how to program, there's a place for you at madHacks. In the 24 hours at madHacks, you can attend workshops, meet new people, and develop amazing applications. With that being said, get ready for an adventure at madHacks 2020!</p>
-            </ion-col>
-            <ion-col size="6">
-              <img src="/assets/shapes.svg" class="about-image"/>
-            </ion-col>
-          </ion-row>
-        </ion-grid>
-      </ion-card-content>
+      <ion-grid>
+        <ion-row>
+          <ion-col>
+            <ion-row>
+              <ion-card-title class="wsite-content-title">Learn. Code. Create.</ion-card-title>
+            </ion-row>
+            <ion-row>
+              <p class="paragraph">
+                  Have you ever wanted to build autonomous drones, amazing iOS/Android apps, cool games, or experiment with artificial intelligence? Whether you're an experienced developer, or just starting to learn how to program, there's a place for you at madHacks. In the 24 hours at madHacks, you can attend workshops, meet new people, and develop amazing applications. With that being said, get ready for an adventure at madHacks 2020!
+              </p>
+            </ion-row>
+          </ion-col>
+          <ion-col>
+            <img src="../../assets/icon/madHacks.png" />
+          </ion-col>
+        </ion-row>
+      </ion-grid>
     </ion-card>
 
 
-    <ion-card>
+    <ion-card class="welcome-card">
       <ion-card-header>
-        <ion-card-title class="title-style">Sponsors</ion-card-title>
+        <ion-card-title class="wsite-content-title">Sponsors</ion-card-title>
       </ion-card-header>
       <ion-card-content>
         <ion-grid>
@@ -80,7 +93,7 @@
     </ion-card>
 
 
-    <ion-card>
+    <ion-card class="meet-team-card">
       <ion-card-header>
         <ion-card-title class="title-style">Meet The Team</ion-card-title>
       </ion-card-header>
@@ -139,7 +152,7 @@
       <ion-grid>
         <ion-row>
           <ion-col>
-            <ion-icon name="logo-instagram" size="large" class="title-sm-style">
+            <ion-icon name="logo-instagram" size="large" class="title-sm-s">
               <a href="https://www.instagram.com/madhacks2020/"></a>
             </ion-icon>
           </ion-col>
