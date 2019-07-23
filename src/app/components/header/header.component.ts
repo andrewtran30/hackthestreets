@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild, Renderer, ElementRef } from '@angular/core';
+import { NavController } from '@ionic/angular';
 
 @Component({
   selector: 'app-header',
@@ -7,8 +8,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
-  constructor() { }
+  @ViewChild('myToolbar', {read: ElementRef}) myToolbar;
+  constructor(public navCtrl: NavController, public renderer: Renderer) { }
 
+  changeStyle() {
+    this.renderer.setElementStyle(this.myToolbar.nativeElement, 'opacity: 0');
+  }
   ngOnInit() {}
 
 }
