@@ -1,6 +1,6 @@
 <ion-header>
-    <ion-toolbar>
-      <ion-title>Madhacks 2020</ion-title>
+    <ion-toolbar color="tertiary">
+      <ion-title color="light"><strong>MADHACKS 2020</strong></ion-title>
       <ion-buttons slot="primary">
           <ion-button [routerLink]="['']">
             <ion-icon name="home" size="large"></ion-icon>
@@ -21,47 +21,61 @@
         </ion-buttons>
     </ion-toolbar>
   </ion-header>
-  
-  <ion-content class="welcome-card">
+<ion-content class="welcome-card" color="light">
     <ion-card class="welcome-card-img">
-      <img src="/assets/shapes.svg" alt="Error Processing Image" />
+      <img src="/assets/team/andrew-tran.png" alt="Error Processing Image" />
+      <ion-grid class="myOverlay">
+            <ion-row>
+              <ion-card-title class="title-text-size">MADHACKS 2020</ion-card-title>
+            </ion-row>
+            <ion-row>
+              <ion-card-subtitle class="subtitle-text-size">March 14-15 | James Madison High School</ion-card-subtitle>
+            </ion-row>
+            <ion-row>
+              <ion-button color="tertiary" style="margin-left: auto; margin-right: auto; margin-top: auto; margin-bottom: auto;">REGISTER NOW</ion-button>
+            </ion-row>
+      </ion-grid>
     </ion-card>
+    
+    <ion-card class="welcome-card">
+      <ion-grid>
+        <ion-row>
+          <ion-col>
+            <ion-row>
+              <ion-card-title class="wsite-content-title">Learn. Code. Create.</ion-card-title>
+            </ion-row>
+            <ion-row>
+              <p class="paragraph">
+                  Have you ever wanted to build autonomous drones, amazing iOS/Android apps, cool games, or experiment with artificial intelligence? Whether you're an experienced developer, or just starting to learn how to program, there's a place for you at madHacks. In the 24 hours at madHacks, you can attend workshops, meet new people, and develop amazing applications. With that being said, get ready for an adventure at madHacks 2020!
+              </p>
+            </ion-row>
+          </ion-col>
+          <ion-col>
+            <img src="../../assets/icon/madHacks.png" />
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-card>
+
 
     <ion-card class="welcome-card">
       <ion-card-header>
-        <ion-card-title class="title-style">Learn. Hack. Win.</ion-card-title>
+        <ion-card-title class="wsite-content-title">Sponsors</ion-card-title>
       </ion-card-header>
       <ion-card-content>
         <ion-grid>
           <ion-row>
-            <ion-col size="6">
-              <p class="text-size">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <ion-col size="4" class="wsite-image wsite-image-border-none">
+                <div class="wsite-image wsite-image-border-none " style="padding-top:10px;padding-bottom:10px;margin-left:0;margin-right:0;text-align:center">
+										<img src="/assets/sponsors/mathtivity-sponsor.png" style="width:auto;max-width:100%" alt="Mathtivity"/>
+										<div style="display:block;font-size:90%"></div>
+									</div>
             </ion-col>
-            <ion-col size="6">
-              <img src="/assets/shapes.svg" />
-            </ion-col>
-          </ion-row>
-        </ion-grid>
-      </ion-card-content>
-    </ion-card>
-
-
-    <ion-card>
-      <ion-card-header>
-        <ion-card-title class="title-style">Sponsors</ion-card-title>
-      </ion-card-header>
-      <ion-card-content>
-        <ion-grid>
-          <ion-row>
-            <ion-col size="2">
-              <img src="/assets/sponsors/mathtivity-sponsor.png">
-              <ion-title class="sponsor-text-size">Mathtivity</ion-title>
-            </ion-col>
-            <ion-col size="2">
-              <img src="/assets/shapes.svg">
-            </ion-col>
-            <ion-col size="2">
-              <img src="/assets/shapes.svg">
+            <ion-col size="6" class="wsite-image wsite-image-border-none">
+                <div class="wsite-image wsite-image-border-none " style="padding-top:10px;padding-bottom:10px;margin-left:0;margin-right:0;text-align:center">
+										<img src="/assets//sponsors/sfts-logo.jpg" style="width:auto;max-width:100%" alt="Mathtivity"/>
+										<div style="display:block;font-size:90%"></div>
+									</div>
             </ion-col>
           </ion-row>
           <ion-row>
@@ -79,32 +93,175 @@
       </ion-card-content>
     </ion-card>
 
+    <ion-card class="schedule-card">
+      <ion-card-header>
+        <ion-card-title class="title-style">Schedule</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        <ion-grid class="iongrid">
+          <ion-row>
+            <ion-col style="text-align: center; color: darkgray;">
+              <ion-card-subtitle class="paragraph"><strong>Saturday, March 14</strong></ion-card-subtitle>
+              <ion-list>
+                <ion-item color="light">
+                  <ion-label style="text-align: center;">
+                      <h2 style="font: bold;">10:00 AM</h2>
+                      <p>Student Check-In & Sponsor Fair</p>
+                  </ion-label>
+                </ion-item>
+                <ion-item color="light">
+                    <ion-label style="text-align: center;">
+                        <h2>11:00 AM</h2>
+                        <p>Opening Ceremony</p>
+                    </ion-label>
+                </ion-item>
+                <ion-item color="light">
+                    <ion-label style="text-align: center;">
+                      <h2>11:30 AM</h2>
+                       <p>Hacking Begins</p>
+                    </ion-label>
+                </ion-item>
+                <ion-item color="light">
+                    <ion-label style="text-align: center;">
+                        <h2>1:00 PM</h2>
+                        <p>Lunch, Registration Closes (no entry after this time)</p>
+                    </ion-label>
+                </ion-item>
+                <ion-item color="light">
+                    <ion-label style="text-align: center;">
+                        <h2>2:00 PM</h2>
+                        <p>Workshops Begin</p>
+                    </ion-label>
+                </ion-item>
+                <ion-item color="light">
+                    <ion-label style="text-align: center;">
+                        <h2>4:00 PM</h2>
+                        <p>Afternoon Snack</p>
+                    </ion-label>
+                </ion-item>
+                <ion-item color="light">
+                    <ion-label style="text-align: center;">
+                        <h2>7:00 PM</h2>
+                        <p>Dinner</p>
+                    </ion-label>
+                </ion-item>
+                <ion-item color="light">
+                    <ion-label style="text-align: center;">
+                        <h2>9:00 PM</h2>
+                        <p>Rising Tech Leaders Panel</p>
+                    </ion-label>
+                </ion-item>
+              </ion-list>
+            </ion-col>
+            <ion-col style="text-align: center; color: darkgray;">
+              <ion-card-subtitle class="paragraph"><strong>Sunday, March 15</strong></ion-card-subtitle>
+              <ion-list>
+                  <ion-item color="light">
+                    <ion-label style="text-align: center;">
+                        <h2>12:00 AM</h2>
+                        <p>Midnight Snack</p>
+                    </ion-label>
+                  </ion-item>
+                  <ion-item color="light">
+                      <ion-label style="text-align: center;">
+                          <h2>4:00 AM</h2>
+                          <p>Late Night Snack</p>
+                      </ion-label>
+                  </ion-item>
+                  <ion-item color="light">
+                      <ion-label style="text-align: center;">
+                        <h2>8:00 AM</h2>
+                         <p>Hacking Ends & Breakfast Begins</p>
+                      </ion-label>
+                  </ion-item>
+                  <ion-item color="light">
+                      <ion-label style="text-align: center;">
+                          <h2>8:45 AM</h2>
+                          <p>Clean-Up</p>
+                      </ion-label>
+                  </ion-item>
+                  <ion-item color="light">
+                      <ion-label style="text-align: center;">
+                          <h2>9:30 AM</h2>
+                          <p>Judging Begins</p>
+                      </ion-label>
+                  </ion-item>
+                  <ion-item color="light">
+                      <ion-label style="text-align: center;">
+                          <h2>11:00 AM</h2>
+                          <p>People's Choice Voting</p>
+                      </ion-label>
+                  </ion-item>
+                  <ion-item color="light">
+                      <ion-label style="text-align: center;">
+                          <h2>11:30 AM</h2>
+                          <p>Closing Ceremony</p>
+                      </ion-label>
+                  </ion-item>
+                  <ion-item color="light">
+                      <ion-label style="text-align: center;">
+                          <h2>12:00 PM</h2>
+                          <p>Hackathon Ends</p>
+                      </ion-label>
+                  </ion-item>
+                </ion-list>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+      </ion-card-content>
+    </ion-card>
 
-    <ion-card>
+    <ion-card class="meet-team-card">
       <ion-card-header>
         <ion-card-title class="title-style">Meet The Team</ion-card-title>
       </ion-card-header>
       <ion-card-content>
-        <ion-list>
-          <ion-item>
-            <ion-avatar slot="start">
-                <img src="/assets/shapes.svg">
-            </ion-avatar>
-            <ion-label>Rayan Yu, James Madison HS</ion-label>
-          </ion-item>
-          <ion-item>
-            <ion-avatar slot="start">
-                <img src="/assets/shapes.svg">
-            </ion-avatar>
-            <ion-label>Andrew Tran, Justice HS</ion-label>
-          </ion-item>
-          <ion-item>
-            <ion-avatar slot="start">
-                <img src="/assets/shapes.svg">
-            </ion-avatar>
-            <ion-label>Team Member 3</ion-label>
-          </ion-item>
-        </ion-list>
+        <ion-grid>
+          <ion-row>
+            <ion-col>
+              <ion-card>
+                <img src="/assets/team/RayanPicture.jpg" class="team-image"/>
+                <ion-card-header>
+                  <ion-card-title>Rayan Yu</ion-card-title>
+                  <ion-card-subtitle>Executive Director</ion-card-subtitle>
+                  <ion-card-content>Rayan is one of the two founders of madHacks and is a current junior at James Madison HS. Rayan's passion in coding is demonstrated through his published research in deep learning, the founding of his school's machine learning club, and his recognition in USA Computing League. With madHacks, he hopes to stir up excitement in the emerging field of AI and let it be known that computer science can be a very humanizing, exciting field of study. 
+                  </ion-card-content>
+                </ion-card-header>
+              </ion-card>
+            </ion-col>
+            <ion-col>
+              <ion-card>
+                <img src="/assets/team/andrew-tran.png" class="team-image"/>
+                <ion-card-header>
+                  <ion-card-title>Andrew Tran</ion-card-title>
+                  <ion-card-subtitle>Executive Director</ion-card-subtitle>
+                  <ion-card-content>Andrew is one of the two founders of madHacks and a current junior at Justice HS. His coding journey started in fourth grade, making simple websites and games for his cousins. Andrew now has 5+ years of coding experience and has developed three apps with 5,000+ downloads across iOS & Android. With madHacks, he hopes to impact others and show that coding can be an enjoyable, enriching experience.
+                  </ion-card-content>
+                </ion-card-header>
+              </ion-card>
+            </ion-col>
+            <ion-col>
+              <ion-card>
+                <img src="/assets/team/andrew-tran.png" class="team-image"/>
+                <ion-card-header>
+                  <ion-card-title>Mohamed Eldirdiri</ion-card-title>
+                  <ion-card-subtitle>Director of Sponsorship</ion-card-subtitle>
+                  <ion-card-content>Andrew Tran is a junior at Justice High School in Falls Church, VA. Andrew started coding as a fourth grader seeking to make cool websites and games for his cousins. </ion-card-content>
+                </ion-card-header>
+              </ion-card>
+            </ion-col>
+            <ion-col>
+              <ion-card>
+                <img src="/assets/team/andrew-tran.png" class="team-image"/>
+                <ion-card-header>
+                  <ion-card-title>Andrew Tran</ion-card-title>
+                  <ion-card-subtitle>Executive Director</ion-card-subtitle>
+                  <ion-card-content>Andrew Tran is a junior at Justice High School in Falls Church, VA. Andrew started coding as a fourth grader seeking to make cool websites and games for his cousins. </ion-card-content>
+                </ion-card-header>
+              </ion-card>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
       </ion-card-content>
     </ion-card>
   </ion-content>
