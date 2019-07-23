@@ -2,7 +2,6 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { HomePage } from './home/home.page';
 import { FaqPage } from './faq/faq.page';
-
 import { SchedulePage } from './schedule/schedule.page';
 import { ContactPage } from './contact/contact.page';
 
