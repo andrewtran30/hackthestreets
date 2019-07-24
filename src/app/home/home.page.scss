@@ -8,6 +8,12 @@
     transition: 0.3s;
     height: 95%;
   }
+
+  .hcs {
+    margin-top: 1%;
+    margin-bottom: 1%;
+    text-align: center;
+  }
   
   /* On mouse-over, add a deeper shadow */
   .card:hover {
@@ -103,6 +109,7 @@
 .member-card {
     height: 95%;
     width: 200px;
+    margin-right: 1%;
     display: inline-block;
     box-shadow: 1px 1px grey, -0.7em 0 .6em rgb(212, 212, 212);
     border-radius: 10%;
