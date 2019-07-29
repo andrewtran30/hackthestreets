@@ -8,11 +8,12 @@ import { NavController } from '@ionic/angular';
 })
 export class HeaderComponent implements OnInit {
 
-  @ViewChild('myToolbar', {read: ElementRef}) myToolbar;
+  @ViewChild('myHome', {read: ElementRef}) myHome;
   constructor(public navCtrl: NavController, public renderer: Renderer) { }
 
-  changeStyle() {
-    this.renderer.setElementStyle(this.myToolbar.nativeElement, 'opacity: 0');
+  changeHomeStyle() {
+    console.log('CLICKED BUTTON')
+    this.renderer.setElementStyle(this.myHome.nativeElement, 'border: 1px solid white');
   }
   ngOnInit() {}
 

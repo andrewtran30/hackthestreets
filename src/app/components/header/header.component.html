@@ -2,15 +2,15 @@
   <ion-toolbar #myToolbar color="tertiary">
     <ion-title style="font-family: Verdana; font-weight: 700 !important;">madHacks 2020</ion-title>
     <ion-buttons slot="primary">
-      <ion-button [routerLink]="['']">
+      <ion-button #myHome [routerLink]="['']">
         <ion-icon name="home" size="large"></ion-icon>
         <ion-label style="font-family: Verdana">Home</ion-label>
       </ion-button>
-      <ion-button [routerLink]="['/faq']">
+      <ion-button #myFAQ [routerLink]="['/faq']">
         <ion-icon name="help" size="large"></ion-icon>
         <ion-label style="font-family: Verdana">FAQ</ion-label>
       </ion-button>
-      <ion-button [routerLink]="['/contact']">
+      <ion-button #myRegister [routerLink]="['/contact']">
         <ion-icon name="contact" size="large"></ion-icon>
         <ion-label style="font-family: Verdana">Register</ion-label>
       </ion-button>
