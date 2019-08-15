@@ -2,9 +2,9 @@
   <ion-card div class="welcome-card-img">
     <img src="/assets/madhacks-background.png"/>
     <div class="card-title">
-      <h1 class="title-madhacks">MADHACKS 2020</h1>
-      <h2 class="subtitle-madhacks">March 14-15 | James Madison High School</h2>
-      <ion-button color="tertiary" style="font-family: Verdana;" [routerLink]="['/contact']">
+      <h1 class="title-madhacks">HACK THE STREETS 2020</h1>
+      <h2 class="subtitle-madhacks">February 22-23 | University of North America</h2>
+      <ion-button color="tertiary" style="font-family: Verdana;" [routerLink]="['/contact']" class="registerBtn">
         REGISTER NOW
       </ion-button>
     </div>
@@ -19,7 +19,7 @@
           </ion-row>
           <ion-row>
             <p class="paragraph">
-                Have you ever wanted to build autonomous drones, amazing iOS/Android apps, cool games, or experiment with artificial intelligence? Whether you're an experienced developer, or just starting to learn how to program, there's a place for you at madHacks. In the 24 hours at madHacks, you can attend workshops, meet new people, and develop amazing applications. With that being said, get ready for an adventure at madHacks 2020!
+                Have you ever wanted to build autonomous drones, amazing iOS/Android apps, cool games, or experiment with artificial intelligence? Whether you're an experienced developer, or just starting to learn how to program, there's a place for you at HackTheStreets. In the 24 hours at HackTheStreets, you can attend workshops, meet new people, and develop amazing applications. With that being said, get ready for an adventure at HackTheStreets 2020!
             </p>
           </ion-row>
         </ion-col>
@@ -206,7 +206,7 @@
     </ion-card-header>
     <ion-card-content>
       <div style="text-align: center">
-        <ion-card class="member-card">
+        <ion-card class="member-card" (click)="showDescription('Rayan Yu')">
           <img src="/assets/team/RayanPicture.jpg" class="team-image"/>
           <ion-card-header>
             <ion-card-title>Rayan Yu</ion-card-title>
@@ -214,7 +214,7 @@
             <ion-card-subtitle>Madison High School</ion-card-subtitle>
           </ion-card-header>
         </ion-card>
-        <ion-card class="member-card">
+        <ion-card class="member-card" (click)="showDescription('Andrew Tran')">
           <img src="/assets/team/andrew-tran.png" class="team-image"/>
           <ion-card-header>
             <ion-card-title>Andrew Tran</ion-card-title>
@@ -222,47 +222,43 @@
             <ion-card-subtitle>Justice High School</ion-card-subtitle>
           </ion-card-header>
         </ion-card>
-      </div>
-      <div style="text-align: center">
-        <ion-card class="member-card">
-          <img src="/assets/team/Ashley McCray.jpg" class="team-image"/>
+        <ion-card class="member-card" (click)="showDescription('Divjot Bedi')">
+          <img src="/assets/team/Divjot-Bedi.jpg" class="team-image"/>
           <ion-card-header>
-            <ion-card-title>Ashley McCray</ion-card-title>
+            <ion-card-title>Divjot Bedi</ion-card-title>
             <ion-card-subtitle>Director of Finances</ion-card-subtitle>
-            <ion-card-subtitle>Justice High School</ion-card-subtitle>
+            <ion-card-subtitle>Thomas Jefferson HSST</ion-card-subtitle>
           </ion-card-header>
         </ion-card>
-        <ion-card class="member-card">
-          <img src="/assets/team/andrew-tran.png" class="team-image"/>
+        <ion-card class="member-card" (click)="showDescription('Justin Hu')">
+          <img src="/assets/team/Justin-Hu.JPG" class="team-image"/>
           <ion-card-header>
-            <ion-card-title>No Name</ion-card-title>
-            <ion-card-subtitle>Director of Logistics</ion-card-subtitle>
-            <ion-card-subtitle>------ HS</ion-card-subtitle>
+            <ion-card-title>Justin Hu</ion-card-title>
+            <ion-card-subtitle>Director of Sponsorship</ion-card-subtitle>
+            <ion-card-subtitle>Madison High School</ion-card-subtitle>
           </ion-card-header>
         </ion-card>
-        <ion-card class="member-card">
+        
+        <ion-card class="member-card" (click)="showDescription('Shea Irvin')">
           <img src="/assets/team/shea-irvin.jpeg" class="team-image"/>
           <ion-card-header>
-            <ion-card-title>Shea Irvin</ion-card-title>
-            <ion-card-subtitle>Director of Sponsorship</ion-card-subtitle>
-            <ion-card-subtitle>Edison High School</ion-card-subtitle>
-          </ion-card-header>
-        </ion-card>
-        <ion-card class="member-card">
-          <img src="/assets/team/andrew-tran.png" class="team-image"/>
-          <ion-card-header>
-            <ion-card-title>No Name</ion-card-title>
-            <ion-card-subtitle>Director of Marketing</ion-card-subtitle>
-            <ion-card-subtitle>------ HS</ion-card-subtitle>
-          </ion-card-header>
-        </ion-card>
-        <ion-card class="member-card">
-          <img src="/assets/team/andrew-tran.png" class="team-image"/>
-          <ion-card-header>
             <ion-card-title>Shea Irvine</ion-card-title>
-            <ion-card-subtitle>Director of Technology</ion-card-subtitle>
-            <ion-card-subtitle>------ HS</ion-card-subtitle>
+            <ion-card-subtitle>Director of Coordinations</ion-card-subtitle>
+            <ion-card-subtitle>Edision High School</ion-card-subtitle>
           </ion-card-header>
+        </ion-card>
+      </div>
+      <div style="margin-left: 19%;">
+        <ion-card style="width: 75%; display: none;" id="descriptionCard">
+          <ion-row>
+              <ion-col>
+                  <img src="/assets/team/RayanPicture.jpg" id="image">
+                </ion-col>
+                <ion-col>
+                  <p style="font-size: 17px; margin: 3%;" id="description">Description of member</p>
+                </ion-col>
+          </ion-row>
+          
         </ion-card>
       </div>
     </ion-card-content>
